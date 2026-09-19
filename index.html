@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hercules Golf</title>
+
 <style>
+
 body{
     margin:0;
     font-family:sans-serif;
@@ -15,6 +17,7 @@ body{
     align-items:flex-start;
     min-height:100vh;
 }
+
 .container{
     width:100%;
     max-width:700px;
@@ -22,10 +25,12 @@ body{
     text-align:center;
     padding:40px;
 }
+
 .brand-logo{
     width:420px;
     max-width:90%;
 }
+
 .tagline{
     margin:25px 0 0;
     font-size:17px;
@@ -33,6 +38,7 @@ body{
     font-weight:600;
     transform:translateX(6px);
 }
+
 .links{
     margin:55px auto;
     display:grid;
@@ -41,44 +47,62 @@ body{
     row-gap:28px;
     max-width:360px;
 }
+
 .links a{
     text-decoration:none;
     color:#666;
     font-size:15px;
 }
-.links a:hover{color:#000}
+
+.links a:hover{
+    color:#000;
+}
+
 .contact{
     font-size:14px;
     transform:translateX(2px);
 }
+
 .contact a{
     color:#666;
     text-decoration:none;
 }
-.divider,.release-divider{
+
+.divider,
+.release-divider{
     border:0;
     border-top:1px solid #ddd;
 }
-.divider{margin:55px 0 0}
-.release{padding-top:42px}
+
+.divider{
+    margin:55px 0 0;
+}
+
+.release{
+    padding-top:42px;
+}
+
 .release-label{
     margin:0 0 28px;
     font-size:14px;
     letter-spacing:.18em;
     color:#555;
 }
+
 .release-title{
     margin:0;
     font-family:Georgia,"Times New Roman",serif;
     font-size:28px;
     font-weight:400;
 }
+
 .release-artist{
     margin:12px 0 32px;
     font-size:15px;
     letter-spacing:.18em;
     color:#555;
 }
+
 .bandana{
     width:360px;
     max-width:82%;
@@ -86,18 +110,21 @@ body{
     margin:0 auto;
     display:block;
 }
+
 .available{
     margin:58px 0 34px;
     font-size:14px;
     letter-spacing:.18em;
     color:#555;
 }
+
 .music-links{
     display:flex;
     justify-content:center;
     align-items:center;
     gap:42px;
 }
+
 .music-links a{
     width:46px;
     height:46px;
@@ -106,27 +133,45 @@ body{
     justify-content:center;
     text-decoration:none;
 }
+
 .music-icon{
     width:42px;
     height:42px;
     object-fit:contain;
     display:block;
 }
+
+/* YouTube Musicだけ少し大きくする */
 .music-links a:last-child .music-icon{
     width:52px;
     height:52px;
 }
-.release-divider{margin:62px 0 34px}
+
+.release-divider{
+    margin:62px 0 34px;
+}
+
 .footer{
     font-size:12px;
     color:#888;
     letter-spacing:.04em;
     padding-bottom:20px;
 }
+
 @media(max-width:600px){
-    .container{padding:32px 24px}
-    .brand-logo{max-width:92%}
-    .tagline{font-size:16px}
+
+    .container{
+        padding:32px 24px;
+    }
+
+    .brand-logo{
+        max-width:92%;
+    }
+
+    .tagline{
+        font-size:16px;
+    }
+
     .links{
         max-width:300px;
         column-gap:42px;
@@ -134,55 +179,162 @@ body{
         margin-top:55px;
         margin-bottom:55px;
     }
-    .bandana{max-width:88%;width:330px}
-    .music-links{gap:28px}
+
+    .bandana{
+        max-width:88%;
+        width:330px;
+    }
+
+    .music-links{
+        gap:28px;
+    }
 }
+
 </style>
 </head>
+
 <body>
+
 <div class="container">
 
-<img class="brand-logo" src="Hercules_logo.png" alt="Hercules Golf">
+    <img class="brand-logo"
+         src="Hercules_logo.png"
+         alt="Hercules Golf">
 
-<p class="tagline">ゴルフをもっと好きになる休日。</p>
+    <p class="tagline">
+        ゴルフをもっと好きになる休日。
+    </p>
 
-<div class="links">
-    <a href="https://instagram.com/herculesgolf.jp" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://www.tiktok.com/@herculesgolf" target="_blank" rel="noopener" aria-label="TikTok">TikTok</a>
-    <a href="https://www.threads.com/@herculesgolf.jp" target="_blank" rel="noopener" aria-label="Threads">Threads</a>
-    <a href="https://x.com/Herculesgolfjp" target="_blank" rel="noopener">X</a>
-    <a href="https://www.youtube.com/@THEMULLIGANS-19TH" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
-    <a href="https://herculesgolf.base.shop/" target="_blank" rel="noopener">BASE</a>
-</div>
 
-<div class="contact">
-    <a href="mailto:info@hercules-golf.com">info@hercules-golf.com</a>
-</div>
+    <div class="links">
 
-<hr class="divider">
+        <a href="https://instagram.com/herculesgolf.jp"
+           target="_blank"
+           rel="noopener">
+            Instagram
+        </a>
 
-<section class="release">
-    <p class="release-label">NEW RELEASE</p>
-    <h1 class="release-title">Morning Green Sunrise</h1>
-    <p class="release-artist">THE MULLIGANS</p>
+        <a href="https://www.tiktok.com/@herculesgolf"
+           target="_blank"
+           rel="noopener"
+           aria-label="TikTok">
+            TikTok
+        </a>
 
-    <img class="bandana" src="TMGS_Bandana.png" alt="TMGS Bandana">
+        <a href="https://www.threads.com/@herculesgolf.jp"
+           target="_blank"
+           rel="noopener"
+           aria-label="Threads">
+            Threads
+        </a>
 
-    <p class="available">NOW AVAILABLE</p>
+        <a href="https://x.com/Herculesgolfjp"
+           target="_blank"
+           rel="noopener">
+            X
+        </a>
 
-    <div class="music-links">
-        <a href="https://open.spotify.com/intl-ja/track/32S22dS37MAskI2aDsNp8Z?si=36c72799d2d946ca" target="_blank" rel="noopener" aria-label="Spotify"><img class="music-icon" src="Spotify_Black.png" alt="Spotify"></a>
-        <a href="https://music.apple.com/jp/song/morning-green-sunrise/6812109460" target="_blank" rel="noopener" aria-label="Apple Music"><img class="music-icon" src="Spotify_Black.png" alt="Apple Music"></a>
-        <a href="https://music.youtube.com/watch?v=Vjmb0wG3Fxo&si=jo4ymUc-g76-dAX8" target="_blank" rel="noopener" aria-label="YouTube Music"><img class="music-icon" src="Spotify_Black.png" alt="YouTube Music"></a>
+        <a href="https://www.youtube.com/@THEMULLIGANS-19TH"
+           target="_blank"
+           rel="noopener"
+           aria-label="YouTube">
+            YouTube
+        </a>
+
+        <a href="https://herculesgolf.base.shop/"
+           target="_blank"
+           rel="noopener">
+            BASE
+        </a>
+
     </div>
-</section>
 
-<hr class="release-divider">
 
-<footer class="footer">
-    © 2026 Hercules Golf. All rights reserved.
-</footer>
+    <div class="contact">
+        <a href="mailto:info@hercules-golf.com">
+            info@hercules-golf.com
+        </a>
+    </div>
+
+
+    <hr class="divider">
+
+
+    <section class="release">
+
+        <p class="release-label">
+            NEW RELEASE
+        </p>
+
+        <h1 class="release-title">
+            Morning Green Sunrise
+        </h1>
+
+        <p class="release-artist">
+            THE MULLIGANS
+        </p>
+
+
+        <img class="bandana"
+             src="TMGS_Bandana.png"
+             alt="TMGS Bandana">
+
+
+        <p class="available">
+            NOW AVAILABLE
+        </p>
+
+
+        <div class="music-links">
+
+            <a href="https://open.spotify.com/intl-ja/track/32S22dS37MAskI2aDsNp8Z?si=36c72799d2d946ca"
+               target="_blank"
+               rel="noopener"
+               aria-label="Spotify">
+
+                <img class="music-icon"
+                     src="Spotify_Black.png"
+                     alt="Spotify">
+
+            </a>
+
+
+            <a href="https://music.apple.com/jp/song/morning-green-sunrise/6812109460"
+               target="_blank"
+               rel="noopener"
+               aria-label="Apple Music">
+
+                <img class="music-icon"
+                     src="AppleMusic_black.png"
+                     alt="Apple Music">
+
+            </a>
+
+
+            <a href="https://music.youtube.com/watch?v=Vjmb0wG3Fxo&si=jo4ymUc-g76-dAX8"
+               target="_blank"
+               rel="noopener"
+               aria-label="YouTube Music">
+
+                <img class="music-icon"
+                     src="Youtube_black.png"
+                     alt="YouTube Music">
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <hr class="release-divider">
+
+
+    <footer class="footer">
+        © 2026 Hercules Golf. All rights reserved.
+    </footer>
 
 </div>
+
 </body>
 </html>
