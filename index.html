@@ -3,107 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Hercules Golf</title>
-
 <style>
 body{
     margin:0;
     font-family:sans-serif;
-    background:#ffffff;
+    background:#fff;
     color:#222;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     min-height:100vh;
 }
-
 .container{
-    text-align:center;
+    width:100%;
     max-width:700px;
+    box-sizing:border-box;
+    text-align:center;
     padding:40px;
 }
-
-img{
+.brand-logo{
     width:420px;
     max-width:90%;
 }
-
-p{
-    margin-top:25px;
+.tagline{
+    margin:25px 0 0;
     font-size:17px;
     letter-spacing:.08em;
     font-weight:600;
-    transform: translateX(6px);
+    transform:translateX(6px);
 }
-
 .links{
-    margin-top:50px;
-}
-
-.links{
-    margin-top:50px;
+    margin:55px auto;
     display:grid;
-    grid-template-columns:repeat(2, auto);
-    gap:18px 40px;
-    justify-content:center;
+    grid-template-columns:repeat(2,minmax(110px,1fr));
+    column-gap:70px;
+    row-gap:28px;
+    max-width:360px;
 }
-
-.links a:hover{
-    color:#000;
-}
-
 .links a{
     text-decoration:none;
     color:#666;
     font-size:15px;
 }
-
-.contact {
-    margin-top: 55px;
-    font-size: 14px;
-    transform: translateX(2px);
+.links a:hover{color:#000}
+.contact{
+    font-size:14px;
+    transform:translateX(2px);
 }
-
-.contact a {
-    color: #666;
-    text-decoration: none;
+.contact a{
+    color:#666;
+    text-decoration:none;
 }
-
-.contact a:hover {
-    text-decoration: underline;
+.divider,.release-divider{
+    border:0;
+    border-top:1px solid #ddd;
 }
-    
-@media (max-width: 600px) {
-
-    p{
-        font-size:18px;
+.divider{margin:55px 0 0}
+.release{padding-top:42px}
+.release-label{
+    margin:0 0 28px;
+    font-size:14px;
+    letter-spacing:.18em;
+    color:#555;
+}
+.release-title{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:28px;
+    font-weight:400;
+}
+.release-artist{
+    margin:12px 0 32px;
+    font-size:15px;
+    letter-spacing:.18em;
+    color:#555;
+}
+.bandana{
+    width:360px;
+    max-width:82%;
+    aspect-ratio:1;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#183d2d;
+    color:#fff;
+    font-size:13px;
+    letter-spacing:.15em;
+}
+.available{
+    margin:58px 0 34px;
+    font-size:14px;
+    letter-spacing:.18em;
+    color:#555;
+}
+.music-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:42px;
+}
+.music-links a{
+    width:46px;
+    height:46px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+}
+.music-icon{
+    width:42px;
+    height:42px;
+    border:1px solid #222;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#222;
+    font-size:9px;
+    letter-spacing:.03em;
+}
+.release-divider{margin:62px 0 34px}
+.footer{
+    font-size:12px;
+    color:#888;
+    letter-spacing:.04em;
+    padding-bottom:20px;
+}
+@media(max-width:600px){
+    .container{padding:32px 24px}
+    .brand-logo{max-width:92%}
+    .tagline{font-size:16px}
+    .links{
+        max-width:300px;
+        column-gap:42px;
+        row-gap:26px;
+        margin-top:55px;
+        margin-bottom:55px;
     }
-
+    .bandana{max-width:88%;width:330px}
+    .music-links{gap:28px}
+}
 </style>
-
 </head>
-
 <body>
-
 <div class="container">
 
-<img src="Hercules_logo.png" alt="Hercules Golf">
+<img class="brand-logo" src="Hercules_logo.png" alt="Hercules Golf">
 
-<p>ゴルフをもっと好きになる休日。</p>
+<p class="tagline">ゴルフをもっと好きになる休日。</p>
 
 <div class="links">
-<a href="https://instagram.com/herculesgolf.jp" target="_blank">Instagram</a>
-<a href="https://x.com/Herculesgolfjp" target="_blank">X</a>
-<a href="https://herculesgolf.base.shop/" target="_blank">BASE</a>
-<a href="https://www.tiktok.com/@herculesgolf" target="_blank">TikTok</a>
+    <a href="https://instagram.com/herculesgolf.jp" target="_blank" rel="noopener">Instagram</a>
+    <a href="#" aria-label="TikTok">TikTok</a>
+    <a href="#" aria-label="Threads">Threads</a>
+    <a href="https://x.com/Herculesgolfjp" target="_blank" rel="noopener">X</a>
+    <a href="#" aria-label="YouTube">YouTube</a>
+    <a href="https://herculesgolf.base.shop/" target="_blank" rel="noopener">BASE</a>
 </div>
 
 <div class="contact">
-<a href="mailto:info@hercules-golf.com">info@hercules-golf.com</a>
+    <a href="mailto:info@hercules-golf.com">info@hercules-golf.com</a>
 </div>
 
-</div>
+<hr class="divider">
 
+<section class="release">
+    <p class="release-label">NEW RELEASE</p>
+    <h1 class="release-title">Morning Green Sunrise</h1>
+    <p class="release-artist">THE MULLIGANS</p>
+
+    <div class="bandana">TMGS BANDANA</div>
+
+    <p class="available">NOW AVAILABLE</p>
+
+    <div class="music-links">
+        <a href="#" aria-label="Spotify"><span class="music-icon">SPOTIFY</span></a>
+        <a href="#" aria-label="Apple Music"><span class="music-icon">APPLE</span></a>
+        <a href="#" aria-label="YouTube Music"><span class="music-icon">YOUTUBE</span></a>
+    </div>
+</section>
+
+<hr class="release-divider">
+
+<footer class="footer">
+    © 2026 Hercules Golf. All rights reserved.
+</footer>
+
+</div>
 </body>
 </html>
